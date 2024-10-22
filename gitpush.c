@@ -25,7 +25,7 @@ if( (a=='y') || (a=='Y') ){
   scanf("%s%c",b1,&dumc);
   printf("ファイル名を入力(*を使用可能)");
   scanf("%s%c",b2,&dumc);
-  sprintf(c,"cd %s && cp %s %s ; cd %s ; git config pull.rebase false && git pull --no-edit && git add . && git commit -m %d/%d/%d && git push -u origin main && cd",b1,b2,b,b,yea,mon,day);
+  sprintf(c,"cd %s && cp %s %s ; cd %s ; git add . && git commit -m %d/%d/%d && git config pull.rebase false && git pull --no-edit && git push -u origin main && cd",b1,b2,b,b,yea,mon,day);
   system(c);
   printf("end\n");
 }
