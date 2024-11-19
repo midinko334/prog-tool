@@ -4,7 +4,7 @@
 
 int main(){
 
-  system("echo \"function ca(){\n    if [ \\$# != 1 ]; then\n        ./a.out\n    else\n        cc \\$@ && ./a.out\n    fi\n}\" >> ~/.bashrc");
+  system("echo \"function ca(){\n    if [ \\$# == 0 ]; then\n        ./a.out\n    else\n        cc \\$@ && ./a.out\n    fi\n}\" >> ~/.bashrc");
   system("/usr/bin/bash ; source ~/.bashrc");
 
 }
