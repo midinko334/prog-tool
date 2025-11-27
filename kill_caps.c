@@ -4,7 +4,6 @@
 
 int main(){
 
-  system("echo \"\nxmodmap -e 'keycode 66 = 0x0000'\n\" >> ~/.bashrc");
-  system("/usr/bin/bash ; source ~/.bashrc");
+  system("echo \"\nxmodmap -e 'keycode 66 = 0x0000'\" >> ~/.bashrc");
 
 }
