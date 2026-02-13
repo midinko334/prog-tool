@@ -4,11 +4,10 @@
 
 int main(){
 
-  system("sudo echo DeletingStart");
 
   system("systemctl disable --user kill_caps.service");
 
-  system("sudo rm /etc/systemd/system/kill_caps.service");
+  system("rm -rf ~/killcaps/");
 
   printf("Program Finished\n");
 
