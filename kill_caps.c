@@ -18,7 +18,7 @@ int main(){
   
   system("echo \"\n[Install]\" | sudo tee -a /etc/systemd/system/kill_caps.service");
   system("echo \"WantedBy=multi-user.target\" | sudo tee -a /etc/systemd/system/kill_caps.service");
-  
+  system("sudo systemctl enable kill_caps.service");
 
   printf("Program Finished\n");
 
