@@ -17,7 +17,7 @@ int main(){
   system("echo \"RemainAfterExit=yes\" | sudo tee -a /etc/systemd/system/kill_caps.service");
   
   system("echo \"\n[Install]\" | sudo tee -a /etc/systemd/system/kill_caps.service");
-  system("echo \"WantedBy=multi-user.target\" | sudo tee -a /etc/systemd/system/kill_caps.service");
+  system("echo \"WantedBy=graphical.target\" | sudo tee -a /etc/systemd/system/kill_caps.service");
   system("sudo systemctl enable kill_caps.service");
 
   printf("Program Finished\n");
